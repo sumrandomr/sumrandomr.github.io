@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-	<title>Workshop Materials</title>
+    <title>Workshop Materials</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,7 +15,8 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-			flex-direction: column;
+            flex-direction: column;
+            position: relative;
         }
         .container {
             text-align: center;
@@ -23,7 +24,7 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-			margin-bottom: 20px;
+            margin-bottom: 20px;
         }
         h1 {
             color: #333;
@@ -40,7 +41,7 @@
         }
         a:hover {
             background-color: #218838;
-		}
+        }
         .back-button {
             margin-top: 20px;
             padding: 10px 20px;
@@ -52,33 +53,39 @@
         }
         .back-button:hover {
             background-color: #0056b3;
-                }
-	}
-        .logo {
-            position: absolute;
-            top: 0px;
-            left: 0px;
         }
-	</style>
+        .logo-container {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 20px 0; /* Add top and bottom padding */
+        }
+        .logo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+    </style>
 </head>
 <body>
-    <img src="materials/PISA-S.png" alt="Logo" class="logo">
+    <div class="logo-container">
+        <img src="materials/PISA-S.png" alt="Logo" class="logo">
+    </div>
     <div class="container">
         <h1>Homework Template</h1>
-		<p> Click the button below to download the template for the homework.</p>
+        <p>Click the button below to download the template for the homework.</p>
         <a href="materials/Homework_TestUnitTemplate.docx" target="_blank">Test Unit Template for Homework</a>
-     </div>
-	<div class="container">
+    </div>
+    <div class="container">
         <h1>PDF Materials</h1>
-		<p> These are purely option, additional readings. <br> 
-			They will be excellent as review materials, or for learning more. <br> 
-			But they aren't required readings.</p>
+        <p>These are purely optional, additional readings. <br> 
+            They will be excellent as review materials, or for learning more. <br> 
+            But they aren't required readings.</p>
         <a href="materials/Masters, 2001_Educational measurement_Assessment Resource Kit.pdf" target="_blank">General Overview: Educational Measurement - Assessment Resources Kit</a>
         <a href="materials/Haladyna, Downing, Rodriguez_2002_A review of MC item-writing Guidelines.pdf" target="_blank">Day 2, Session 1: MC Item Writing Guidelines</a>
-		<a href="materials/Wu and Adams_Rasch Measurement.pdf" target="_blank">Day 3, Session 1: Wu & Adams, Rasch Measurement</a>
-		<a href="materials/Stemler and Naples, 2021_Rasch v. IRT  Knowing When to Cross the Line.pdf" target="_blank">Day 3, Session 3: Rasch vs IRT: Knowing when to cross the lines</a>
-		<a href="materials/Educational Measurement_2009_Frey_An NCME Instructional Module on Booklet Designs in Large Scale Assessments.pdf" target="_blank">Day 4, Session 1: NCME Module on Booklet Designs</a>
-	</div>
-	<a href="index.html" class="back-button">Back to Index</a>
+        <a href="materials/Wu and Adams_Rasch Measurement.pdf" target="_blank">Day 3, Session 1: Wu & Adams, Rasch Measurement</a>
+        <a href="materials/Stemler and Naples, 2021_Rasch v. IRT  Knowing When to Cross the Line.pdf" target="_blank">Day 3, Session 3: Rasch vs IRT: Knowing when to cross the lines</a>
+        <a href="materials/Educational Measurement_2009_Frey_An NCME Instructional Module on Booklet Designs in Large Scale Assessments.pdf" target="_blank">Day 4, Session 1: NCME Module on Booklet Designs</a>
+    </div>
+    <a href="index.html" class="back-button">Back to Index</a>
 </body>
 </html>
