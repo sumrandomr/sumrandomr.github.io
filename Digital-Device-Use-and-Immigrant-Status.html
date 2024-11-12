@@ -3,10 +3,14 @@
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.5.57">
-<meta name="robots" content="noindex, nofollow">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nathanael Reinertsen &amp; Clara Wilsher Beyer">
+<meta name="robots" content="noindex, nofollow">
+
+<meta name="author" content="Nathanael Reinertsen">
+<meta name="author" content="Clara Wilsher Beyer">
+<meta name="keywords" content="Large-scale Assessment, Digital Devices, Immigration">
 
 <title>Bridging the Gap: How SES and Immigrant Status Affect Device Use</title>
 <style>
@@ -20,7 +24,27 @@ ul.task-list li input[type="checkbox"] {
 width: 0.8em;
 margin: 0 0.8em 0.2em -1em;  vertical-align: middle;
 }
-</style>
+
+div.csl-bib-body { }
+div.csl-entry {
+clear: both;
+margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+margin-left:2em;
+text-indent:-2em;
+}
+div.csl-left-margin {
+min-width:2em;
+float:left;
+}
+div.csl-right-inline {
+margin-left:2em;
+padding-left:1em;
+}
+div.csl-indent {
+margin-left: 2em;
+}</style>
 
 
 <script>/*!
@@ -3468,21 +3492,42 @@ window.Quarto = {
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Authors</div>
+  <div class="quarto-title-meta-heading">Affiliations</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Nathanael Reinertsen <a href="mailto:nate.reinertsen@oecd.org" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-3123-5203" class="quarto-title-author-orcid"> <img role="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            OECD
+          </p>
+      </div>
+    <div class="quarto-title-meta-contents">
+    <p class="author">Clara Wilsher Beyer <a href="mailto:clara.beyer@iea-hamburg.de" class="quarto-title-author-email"><i class="bi bi-envelope"></i></a> <a href="https://orcid.org/0000-0002-6751-2030" class="quarto-title-author-orcid"> <img role="img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            IEA Hamburg
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Nathanael Reinertsen &amp; Clara Wilsher Beyer </p>
-          </div>
-  </div>
-    
+      
   
     
   </div>
   
 
+<div>
+  <div class="keywords">
+    <div class="block-title">Keywords</div>
+    <p>Large-scale Assessment, Digital Devices, Immigration</p>
+  </div>
+</div>
 
 </header>
 
@@ -3508,10 +3553,10 @@ window.Quarto = {
 </section>
 <section id="literature-review" class="level2" data-number="4">
 <h2 data-number="4" class="anchored" data-anchor-id="literature-review"><span class="header-section-number">4</span> Literature Review</h2>
-<p>The so-called Digital Transformation has been shown to impact national economic development. In turn, disparities in access to information and communication technologies can exacerbate existing social inequalities, and limit efforts to alleviate poverty among populations without access to Information and Communication Technologies (e.g. Khabirpour et al., 2024; Rozite, Balina, &amp; Freimane, 2019; UNESCAP, 2021). As we envision education in a digital society, we must necessarily turn our minds to equity and the universality of educational opportunity. This consideration is paramount, as the digital divide not only reflects but also reinforces broader social divides.</p>
+<p>The so-called Digital Transformation has been shown to impact national economic development. In turn, disparities in access to information and communication technologies can exacerbate existing social inequalities, and limit efforts to alleviate poverty among populations without access to Information and Communication Technologies (e.g. <span class="citation" data-cites="Commission2024">Commission et al. (<a href="#ref-Commission2024" role="doc-biblioref">2024</a>)</span>; <span class="citation" data-cites="Rozite2019">Rozite, Balina, and Freimane (<a href="#ref-Rozite2019" role="doc-biblioref">2019</a>)</span>; <span class="citation" data-cites="UNESCAP2021">UNESCAP (<a href="#ref-UNESCAP2021" role="doc-biblioref">2021</a>)</span>). As we envision education in a digital society, we must necessarily turn our minds to equity and the universality of educational opportunity. This consideration is paramount, as the digital divide not only reflects but also reinforces broader social divides.</p>
 <p>In a world where digital literacy is increasingly synonymous with basic literacy, ensuring equitable access to technology becomes a fundamental aspect of educational policy. The integration of digital tools in education offers unprecedented opportunities for personalised learning, interactive engagement, and access to a wealth of resources. However, these benefits are not uniformly distributed. Students from underprivileged backgrounds often face significant barriers, including lack of access to digital devices, which has the potential to limit the development of digital skills. These obstacles can hinder their academic progress and future career prospects, perpetuating cycles of disadvantage.</p>
-<p>Previous analyses of data from the Programme for International Student Assessment (PISA) 2022 data indicate a positive correlation between moderate digital device use and academic performance in Mathematics, as well as a sense of belonging (OECD, 2023). Given this, it is plausible that factors affecting digital device availability could indirectly impact various educational outcomes. This is additional evidence that device availability is a critical issue for ensuring equitable outcomes for youth.</p>
-<p>Published results from the International Early Learning and Child Well-being Study (IELS) (OECD, 2020), find that the majority of 5-year-olds use digital devices. This is perhaps unsurprising in itself, but a question remains as to whether there are factors, such as SES and immigrant status that are predictive of device use. Unlike PISA, effects of the frequency of digital device use were more mixed, finding that in the United States and England there were some positive associations between emergent literacy and moderate levels of digital device use (OECD, 2020).</p>
+<p>Previous analyses of data from the Programme for International Student Assessment (PISA) 2022 data indicate a positive correlation between moderate digital device use and academic performance in Mathematics, as well as a sense of belonging (<span class="citation" data-cites="OECD2023">OECD (<a href="#ref-OECD2023" role="doc-biblioref">2023</a>)</span>). Given this, it is plausible that factors affecting digital device availability could indirectly impact various educational outcomes. This is additional evidence that device availability is a critical issue for ensuring equitable outcomes for youth.</p>
+<p>Published results from the International Early Learning and Child Well-being Study (IELS) (<span class="citation" data-cites="OECD2020">OECD (<a href="#ref-OECD2020" role="doc-biblioref">2020</a>)</span>), find that the majority of 5-year-olds use digital devices. This is perhaps unsurprising in itself, but a question remains as to whether there are factors, such as SES and immigrant status that are predictive of device use. Unlike PISA, effects of the frequency of digital device use were more mixed, finding that in the United States and England there were some positive associations between emergent literacy and moderate levels of digital device use (<span class="citation" data-cites="OECD2020">OECD (<a href="#ref-OECD2020" role="doc-biblioref">2020</a>)</span>).</p>
 </section>
 <section id="data" class="level2" data-number="5">
 <h2 data-number="5" class="anchored" data-anchor-id="data"><span class="header-section-number">5</span> Data</h2>
@@ -3704,7 +3749,7 @@ window.Quarto = {
 <caption>PISA association of ESCS and use of devices for learning and leisure</caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">variable</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">F_Value</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">P_Value</th>
@@ -3776,7 +3821,7 @@ window.Quarto = {
 <caption>PISA association of IMMIG and use of devices for learning and leisure</caption>
 <thead>
 <tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">variable</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">Chi_Square</th>
 <th style="text-align: right;" data-quarto-table-cell-role="th">Degrees_of_Freedom</th>
@@ -3887,6 +3932,23 @@ window.Quarto = {
 </section>
 <section id="references" class="level2" data-number="9">
 <h2 data-number="9" class="anchored" data-anchor-id="references"><span class="header-section-number">9</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Commission2024" class="csl-entry" role="listitem">
+Commission, European, Social Affairs for Employment, Inclusion, N Khabirpour, L Pelizzari, J Limbers, M Richiardi, C Fenwick, C Astarita, and L Westhoff. 2024. <em>Study on Poverty and Income Inequality in the Context of the Digital Transformation – Final Report. Part a, Ensuring a Socially Fair Digital Transformation</em>. Publications Office of the European Union. <a href="https://doi.org/doi/10.2767/012264">https://doi.org/doi/10.2767/012264</a>.
+</div>
+<div id="ref-OECD2020" class="csl-entry" role="listitem">
+OECD. 2020. <em>Early Learning and Child Well-Being : A Study of Five-Year-Olds in England, Estonia, and the United States</em>. OECD. <a href="https://doi.org/10.1787/3990407f-en">https://doi.org/10.1787/3990407f-en</a>.
+</div>
+<div id="ref-OECD2023" class="csl-entry" role="listitem">
+———. 2023. <em>PISA 2022 Results (Volume II)</em>. OECD. <a href="https://doi.org/10.1787/a97db61c-en">https://doi.org/10.1787/a97db61c-en</a>.
+</div>
+<div id="ref-Rozite2019" class="csl-entry" role="listitem">
+Rozite, K, S Balina, and R Freimane. 2019. <span>“Digital Competence Rating and Economic Development in the EU.”</span> In <em>Proceedings of New Challenges of Economic and Business Development – 2019: Incentives for Sustainable Economic Growth.</em>, 701–8.
+</div>
+<div id="ref-UNESCAP2021" class="csl-entry" role="listitem">
+UNESCAP. 2021. <span>“Inequality in Access to Information and Communication Technologies (ICTs) Reducing Inequality in FEALAC Member Countries: Strengthening the Evidence Base to Leave No One Behind.”</span> UNESCAP. <a href="https://www.socialprotection-toolbox.org/files/inequality/documents/Inequality_in_Access_to_ICTs.pdf">https://www.socialprotection-toolbox.org/files/inequality/documents/Inequality_in_Access_to_ICTs.pdf</a>.
+</div>
+</div>
 </section>
 
 </main>
