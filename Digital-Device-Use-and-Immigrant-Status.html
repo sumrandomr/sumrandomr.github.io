@@ -3544,8 +3544,8 @@ window.Quarto = {
 <section id="research-questions" class="level2" data-number="3">
 <h2 data-number="3" class="anchored" data-anchor-id="research-questions"><span class="header-section-number">3</span> Research Questions</h2>
 <ol type="1">
-<li><p>Using IELS data, to what extent does immigrant Status affect Frequency of Device use in 5-year-olds, over and above SES?</p></li>
-<li><p>Using PISA data, to what extent does immigrant Status affect access to and use of digital devices for 15-year-olds, over and above ESCS (the PISA index of SES)?</p></li>
+<li><p>Using IELS data, to what extent does Immigrant Status affect frequency of device use in 5-year-olds, over and above SES?</p></li>
+<li><p>Using PISA data, to what extent does Immigrant Status affect access to and use of digital devices for 15-year-olds, over and above ESCS (the PISA index of SES)?</p></li>
 <li><p>Are there general trends that appear to hold across the two age groups, that have implications for policy?</p></li>
 </ol>
 </section>
@@ -3561,6 +3561,39 @@ window.Quarto = {
 <p>Both IELS and PISA data sets contain a variable coding immigrant status, <code>IMMIG</code>. In PISA and IELS, a student is considered an immigrant if both parents were born in a country other than the country of the assessment. PISA further differentiated between first- and second-generation immigrants, where first-generation immigrant students were themselves born outside the country of assessment, while second-generation immigrants were born in the country of assessment.</p>
 <p>In IELS, the parents’ questionnaire asks about the frequency with which their child uses a digital device, offering four possible responses: Every Day, Weekly, Monthly, and Rarely or Never. In PISA 2022, students answer about their own use of digital devices, and are asked to estimate how many hours they use a digital device for learning or leisure at school, before and after school, and on weekends. There is also a set of questions about how many of certain types of digital devices there are in their home.</p>
 <p>Both IELS and PISA data contain indices of Socio-economic advantage. In IELS this is the <code>SES</code> variable, and in PISA it is the <code>ESCS</code> variable. The technical reports of each study contain information about how these indices are calculated <span class="citation" data-cites="OECD2021">OECD (<a href="#ref-OECD2024" role="doc-biblioref">2024</a>)</span>. It is important to note here, though, that while they are both ways to the same, they are defined differently and measure different things.</p>
+</section>
+<section id="methods" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="methods"><span class="header-section-number">6</span> Methods</h2>
+<p>There were two phases of analysis: a preliminary to establish whether there were likely relationships between relevant variables that were worthy of further analysis; and, a main analysis to examine the nature and strength of the relationships in more detail.</p>
+<section id="methods-used-in-preliminary-analyses" class="level3" data-number="6.1">
+<h3 data-number="6.1" class="anchored" data-anchor-id="methods-used-in-preliminary-analyses"><span class="header-section-number">6.1</span> Methods used in Preliminary Analyses</h3>
+<section id="data-preprocessing" class="level4" data-number="6.1.1">
+<h4 data-number="6.1.1" class="anchored" data-anchor-id="data-preprocessing"><span class="header-section-number">6.1.1</span> Data Preprocessing</h4>
+<p>Prior to conducting the analyses, the data were preprocessed to ensure the accuracy and reliability of the results. The preprocessing steps included filtering the datasets to include only the relevant variables for each analysis, and observations with missing values in the variables of interest were dropped.</p>
+</section>
+<section id="survey-design-and-weights" class="level4" data-number="6.1.2">
+<h4 data-number="6.1.2" class="anchored" data-anchor-id="survey-design-and-weights"><span class="header-section-number">6.1.2</span> Survey design and weights</h4>
+<p>Both IELS and PISA 2022 datasets contain Senate Weights for each observation, that ensure equal contribution of all countries to International analyses. Additionally, balanced replicate weights are provided for the estimation of statistics such as Standard Errors for estimates. All analysis reported in this project use Senate Weights for estimates. An editorial choice has been made to not report Standard Errors of the estimates, but they were computed during analyses.</p>
+</section>
+<section id="effect-of-ses-on-frequency-of-device-use" class="level4" data-number="6.1.3">
+<h4 data-number="6.1.3" class="anchored" data-anchor-id="effect-of-ses-on-frequency-of-device-use"><span class="header-section-number">6.1.3</span> Effect of SES on Frequency of Device Use</h4>
+<p>To investigate the relationship between socioeconomic status (SES) and the frequency of digital device use, a one-way ANOVA was conducted. The analysis was performed on a subset of the data, excluding missing values. The SES variable was used as the dependent variable, and the frequency of device use was the independent variable. The analysis was weighted by the sampling weights provided in the dataset. Partial Eta Squared was calculated to measure the effect size of SES on the frequency of device use.</p>
+</section>
+<section id="association-of-immigrant-status-with-frequency-of-device-use" class="level4" data-number="6.1.4">
+<h4 data-number="6.1.4" class="anchored" data-anchor-id="association-of-immigrant-status-with-frequency-of-device-use"><span class="header-section-number">6.1.4</span> Association of Immigrant Status with Frequency of Device Use</h4>
+<p>The association between immigrant status and the frequency of digital device use was examined using a Chi-Squared Test. The analysis was conducted on a filtered dataset, excluding missing values. A weighted contingency table was created using the sampling weights, and the Chi-Squared Test was performed on this table. Cramér’s V was calculated to measure the effect size of the association between immigrant status and the frequency of device use.</p>
+</section>
+</section>
+<section id="methods-used-in-the-main-analysis" class="level3" data-number="6.2">
+<h3 data-number="6.2" class="anchored" data-anchor-id="methods-used-in-the-main-analysis"><span class="header-section-number">6.2</span> Methods used in the Main Analysis</h3>
+</section>
+</section>
+<section id="results" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="results"><span class="header-section-number">7</span> Results</h2>
+<section id="preliminary-analysis" class="level3" data-number="7.1">
+<h3 data-number="7.1" class="anchored" data-anchor-id="preliminary-analysis"><span class="header-section-number">7.1</span> Preliminary Analysis</h3>
+<section id="iels" class="level4" data-number="7.1.1">
+<h4 data-number="7.1.1" class="anchored" data-anchor-id="iels"><span class="header-section-number">7.1.1</span> IELS</h4>
 <p>In the IELS data set, there are 4280 children with data on both Immigration status and device use, 14% of which are immigrants by the IELS definition. By country, there are 1272 children in the USA sample (19% with immigrant status), 1417 in England sample (21% with immigrant status), and 1591 in the Estonia sample (2% with immigrant status).</p>
 <p>It is evident that there are far fewer children with immigrant status than natives: overall about 13% of children who sat IELS and for whom there is data on the frequency of their device use, were immigrants. The table below presents the percentage of children in each of the native and immigrant status categories by the frequency of their reported digital device use. In both the native and immigrant groups, the pattern is similar: a large majority (&gt;80%) use devices at least weekly, and a small proportion use digital devices monthly or rarely.</p>
 <div class="cell">
@@ -3613,6 +3646,105 @@ window.Quarto = {
 
 </div>
 </div>
+<p>A one-way ANOVA analysis was run to examine the contribution of SES to reported frequency of digital device use. With a large sample (n = 4280), statistical significance was expected and, indeed, the p-value approached 0. However, statistical significance is not the same as meaningful difference, so a measure of effect size (Partial Eta Squared) was calculated for the IELS SES index on the reported frequency of digital device use. The effect size measure suggests a large effect.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-classic-2 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>IELS effect size of SES on frequency of device use</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">F_Value</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">d.f.</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">P_Value</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">P.Eta_Squared</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ELPAQ0401</td>
+<td style="text-align: right;">4280</td>
+<td style="text-align: right;">13.2531</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.4401</td>
+</tr>
+</tbody><tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Data:</span></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> IELS. OECD, 2020.</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+
+
+</div>
+</div>
+<p>Next, the association of Immigrant status (a binary variable in IELS) and reported frequency of digital device use was examined, by performing a Chi Squared Test, followed by calculating a measure of effect size: Cramér’s V. A preliminary analysis with unweighted individual-level data suggested a likely effect, however a second run including weights did not reach the threshold for statistical significance at the .05 level, so the final conclusion is that there is little evidence of an effect from the preliminary analysis.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-classic-2 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
+<caption>IELS effect size of IMMIG and frequency of device use</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Variable</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Chi_Square</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Degrees_of_Freedom</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">P_Value</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">Cramers_V</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ELPAQ0401</td>
+<td style="text-align: right;">4280</td>
+<td style="text-align: right;">3.5369</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.316</td>
+<td style="text-align: right;">0.0615</td>
+</tr>
+</tbody><tfoot>
+<tr class="even">
+<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Data:</span></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; padding: 0;"><sup></sup> IELS. OECD, 2020.</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;"></td>
+</tr>
+</tfoot>
+
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="pisa" class="level4" data-number="7.1.2">
+<h4 data-number="7.1.2" class="anchored" data-anchor-id="pisa"><span class="header-section-number">7.1.2</span> PISA</h4>
 <p>In the PISA 2022 data, there is a total of 498453 students for whom there is both data about ESCS and their device use, 486210 students for whom there is both data about their Immigrant status and device use. There are 479448 students for whom there is complete data about their ESCS, their immigrant status and their use of digital devices. The tables below use the filtered data set where there is complete information about Immigrant status, ESCS and Device Use. A preliminary examination of the tables suggests there are similar patterns of frequency of device use for different purposes, across Native, First-Generation and Second-Generation students. However, this is before ESCS is controlled for and further analysis is warranted, given that we suspect ESCS and Immigrant status my interact.</p>
 <div class="cell">
 <div class="cell-output-display">
@@ -4126,135 +4258,7 @@ window.Quarto = {
 
 </div>
 </div>
-</section>
-<section id="methods" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="methods"><span class="header-section-number">6</span> Methods</h2>
-<p>There were two phases of analysis: a preliminary to establish whether there were likely relationships between relevant variables that were worthy of further analysis; and, a main analysis to examine the nature and strength of the relationships in more detail.</p>
-<section id="methods-used-in-preliminary-analyses" class="level3" data-number="6.1">
-<h3 data-number="6.1" class="anchored" data-anchor-id="methods-used-in-preliminary-analyses"><span class="header-section-number">6.1</span> Methods used in Preliminary Analyses</h3>
-<section id="data-preprocessing" class="level4" data-number="6.1.1">
-<h4 data-number="6.1.1" class="anchored" data-anchor-id="data-preprocessing"><span class="header-section-number">6.1.1</span> Data Preprocessing</h4>
-<p>Prior to conducting the analyses, the data were preprocessed to ensure the accuracy and reliability of the results. The preprocessing steps included filtering the datasets to include only the relevant variables for each analysis, and observations with missing values in the variables of interest were dropped.</p>
-</section>
-<section id="effect-of-ses-on-frequency-of-device-use" class="level4" data-number="6.1.2">
-<h4 data-number="6.1.2" class="anchored" data-anchor-id="effect-of-ses-on-frequency-of-device-use"><span class="header-section-number">6.1.2</span> Effect of SES on Frequency of Device Use</h4>
-<p>To investigate the relationship between socioeconomic status (SES) and the frequency of digital device use, a one-way ANOVA was conducted. The analysis was performed on a subset of the data, excluding missing values. The SES variable was used as the dependent variable, and the frequency of device use was the independent variable. The analysis was weighted by the sampling weights provided in the dataset. Partial Eta Squared was calculated to measure the effect size of SES on the frequency of device use.</p>
-</section>
-<section id="association-of-immigrant-status-with-frequency-of-device-use" class="level4" data-number="6.1.3">
-<h4 data-number="6.1.3" class="anchored" data-anchor-id="association-of-immigrant-status-with-frequency-of-device-use"><span class="header-section-number">6.1.3</span> Association of Immigrant Status with Frequency of Device Use</h4>
-<p>The association between immigrant status and the frequency of digital device use was examined using a Chi-Squared Test. The analysis was conducted on a filtered dataset, excluding missing values. A weighted contingency table was created using the sampling weights, and the Chi-Squared Test was performed on this table. Cramér’s V was calculated to measure the effect size of the association between immigrant status and the frequency of device use.</p>
-</section>
-</section>
-<section id="methods-used-in-the-main-analysis" class="level3" data-number="6.2">
-<h3 data-number="6.2" class="anchored" data-anchor-id="methods-used-in-the-main-analysis"><span class="header-section-number">6.2</span> Methods used in the Main Analysis</h3>
-</section>
-</section>
-<section id="results" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="results"><span class="header-section-number">7</span> Results</h2>
-<section id="preliminary-analysis" class="level3" data-number="7.1">
-<h3 data-number="7.1" class="anchored" data-anchor-id="preliminary-analysis"><span class="header-section-number">7.1</span> Preliminary Analysis</h3>
-<section id="iels" class="level4" data-number="7.1.1">
-<h4 data-number="7.1.1" class="anchored" data-anchor-id="iels"><span class="header-section-number">7.1.1</span> IELS</h4>
-<p>A one-way ANOVA analysis was run to examine the contribution of SES to reported frequency of digital device use. With a large sample (n = 4280), statistical significance was expected and, indeed, the p-value approached 0. However, statistical significance is not the same as meaningful difference, so a measure of effect size (Partial Eta Squared) was calculated for the IELS SES index on the reported frequency of digital device use. The effect size measure suggests a large effect.</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="lightable-classic-2 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>IELS effect size of SES on frequency of device use</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Variable</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">F_Value</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">d.f.</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">P_Value</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">P.Eta_Squared</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">ELPAQ0401</td>
-<td style="text-align: right;">4280</td>
-<td style="text-align: right;">13.2531</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0</td>
-<td style="text-align: right;">0.4401</td>
-</tr>
-</tbody><tfoot>
-<tr class="even">
-<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Data:</span></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding: 0;"><sup></sup> IELS. OECD, 2020.</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-</tfoot>
-
-</table>
-
-
-</div>
-</div>
-<p>Next, the association of Immigrant status (a binary variable in IELS) and reported frequency of digital device use was examined, by performing a Chi Squared Test, followed by calculating a measure of effect size: Cramér’s V. A preliminary analysis with unweighted individual-level data suggested a likely effect, however a second run including weights did not reach the threshold for statistical significance at the .05 level, so the final conclusion is that there is little evidence of an effect from the preliminary analysis.</p>
-<div class="cell">
-<div class="cell-output-display">
-<table class="lightable-classic-2 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
-<caption>IELS effect size of IMMIG and frequency of device use</caption>
-<thead>
-<tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">Variable</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">n</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Chi_Square</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Degrees_of_Freedom</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">P_Value</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">Cramers_V</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">ELPAQ0401</td>
-<td style="text-align: right;">4280</td>
-<td style="text-align: right;">3.5369</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">0.316</td>
-<td style="text-align: right;">0.0615</td>
-</tr>
-</tbody><tfoot>
-<tr class="even">
-<td style="text-align: left; padding: 0;"><span style="font-style: italic;">Data:</span></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left; padding: 0;"><sup></sup> IELS. OECD, 2020.</td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-<td style="text-align: right;"></td>
-</tr>
-</tfoot>
-
-</table>
-
-
-</div>
-</div>
-</section>
-<section id="pisa" class="level4" data-number="7.1.2">
-<h4 data-number="7.1.2" class="anchored" data-anchor-id="pisa"><span class="header-section-number">7.1.2</span> PISA</h4>
-<p>Similar approaches were taken to explore the PISA 2022 dataset: ANOVA of ESCS on each of the questionnaire variables related to the use of digital devices for learning and pleasure outside of school hours. The effect size measure (Eta Squared) shows large effects of ESCS on learning activities and leisure activities.</p>
+<p>Similar approaches were taken to explore the PISA 2022 dataset, as were with the IELS data: ANOVA of ESCS on each of the questionnaire variables related to the use of digital devices for learning and pleasure outside of school hours. The effect size measure (Eta Squared) shows large effects of ESCS on learning activities and leisure activities.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="lightable-classic-2 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
@@ -4271,28 +4275,28 @@ window.Quarto = {
 <tbody>
 <tr class="odd">
 <td style="text-align: left;">Learning activities before/after school</td>
-<td style="text-align: right;">502849</td>
+<td style="text-align: right;">498453</td>
 <td style="text-align: right;">3851.443</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0.2659</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Learning activities on weekends</td>
-<td style="text-align: right;">502849</td>
+<td style="text-align: right;">498453</td>
 <td style="text-align: right;">2962.287</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0.2651</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Leisure before/after school</td>
-<td style="text-align: right;">502849</td>
+<td style="text-align: right;">498453</td>
 <td style="text-align: right;">10827.251</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0.2729</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Leisure on weekends</td>
-<td style="text-align: right;">502849</td>
+<td style="text-align: right;">498453</td>
 <td style="text-align: right;">6851.907</td>
 <td style="text-align: right;">0</td>
 <td style="text-align: right;">0.2689</td>
@@ -4326,7 +4330,7 @@ window.Quarto = {
 
 </div>
 </div>
-<p>When examining the association of Immigrant Status use of digital devices for learning and leisure (without controlling for SES), Cramér’s V shows very small associations with learning and leisure activities, however there are a relatively large number of degrees of freedom (which lowers our expectation of the absolute value of Cramér’s V). However, given the general assumption that SES and Immigrant status are connected in some way, the lack of an association between Immigrant Status and use of digital devices at this stage is not necessarily a negative finding, just an indication that SES needs to be controlled for.</p>
+<p>When examining the association of Immigrant Status use of digital devices for learning and leisure outside of school (without controlling for SES), Cramér’s V shows very small associations with learning and leisure activities, however there are a relatively large number of degrees of freedom (which lowers our expectation of the absolute value of Cramér’s V). However, given the general assumption that SES and Immigrant status are connected in some way, the lack of an association between Immigrant Status and use of digital devices at this stage is not necessarily a negative finding, just an indication that SES needs to be controlled for.</p>
 <div class="cell">
 <div class="cell-output-display">
 <table class="lightable-classic-2 caption-top table table-sm table-striped small" data-quarto-postprocess="true">
