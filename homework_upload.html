@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework Upload</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .upload-container {
+      background-color: #f9f9f9;
+      border: 2px solid #4CAF50;
+      border-radius: 10px;
+      padding: 30px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #4CAF50;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="upload-container">
+    <h2>Upload Your Homework</h2>
+    <form id="uploadForm">
+      <label for="group">Select Your Group:</label>
+      <select id="group" required>
+        <option value="">-- Choose a Group --</option>
+        <option value="1">Group 1</option>
+        <option value="2">Group 2</option>
+        <option value="3">Group 3</option>
+        <option value="4">Group 4</option>
+        <option value="5">Group 5</option>
+        <option value="6">Group 6</option>
+      </select>
+      <button type="submit">Go to Upload Page</button>
+    </form>
+  </div>
+
+  <script>
+    const uploadLinks = {
+      1: "https://oecd-my.sharepoint.com/:f:/g/personal/nate_reinertsen_oecd_org/EjI6WJOsWwpGjm4hCY2u6qUBKPaevcpxy_FmQgrkftYQJg?e=HISMZ1",
+      2: "https://oecd-my.sharepoint.com/:f:/g/personal/nate_reinertsen_oecd_org/EgD48tJz6AVBsxwv_4WqUKQBJlQ1v7ubC5Op0W3CFRhs-Q?e=gzuXY0",
+      3: "https://oecd-my.sharepoint.com/:f:/g/personal/nate_reinertsen_oecd_org/EmWLO8EDr89Envl9PsMxesgBZiAZB0joQmnpSm1kcnTjHQ?e=LzFBoQ",
+      4: "https://oecd-my.sharepoint.com/:f:/g/personal/nate_reinertsen_oecd_org/EvTY0fU2LPpEkWb2djVx_ckBL9xrIQZ5g1QRv1lZ7o0WdQ?e=afS4Rb",
+      5: "https://oecd-my.sharepoint.com/:f:/g/personal/nate_reinertsen_oecd_org/EgEjl1TLx-9BjlJE7O78HagBbY6QKcqbFuUKovr5m_aOxQ?e=FhhwIs",
+      6: "https://oecd-my.sharepoint.com/:f:/g/personal/nate_reinertsen_oecd_org/EiEm0kVrYXJKs_kPWTokZO8BWaF5orXt_-K0u9kZJaTWFQ?e=nBt7kf"
+    };
+
+    document.getElementById("uploadForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const group = document.getElementById("group").value;
+      if (uploadLinks[group]) {
+        window.open(uploadLinks[group], "_blank");
+      } else {
+        alert("Please select a valid group.");
+      }
+    });
+  </script>
+</body>
+</html>
